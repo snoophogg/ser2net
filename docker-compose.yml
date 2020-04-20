@@ -1,0 +1,10 @@
+version: '3'
+services:
+  
+  ser2net:
+    container_name: ser2net
+    image: snoophogg/ser2net
+    devices:
+      - /dev/ttyUSB1:/dev/ttyUSB0
+    ports:
+      - 3801:3333
